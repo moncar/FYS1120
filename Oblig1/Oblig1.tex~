@@ -1,0 +1,303 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\pagestyle{empty}
+
+%% Numbered exercises
+\newcounter{excount}[chapter]
+\newenvironment{exercise}[1][]{\addtocounter{excount}{1} \noindent {\bf Oppg\aa ve
+    \arabic{excount} \ \ #1}\hspace{2mm}}{\vspace{4mm}}
+
+
+\title{\normalsize FYS1120 Elektromagnetisme 2014\\
+\vspace{10mm}
+\huge Obligatorisk oppg\aa ve 1\\
+\vspace{10mm}
+\normalsize Innleveringsfrist {\bf 19. september kl. 23.59}}
+
+
+
+\author{Øyvind Sigmundson Schøyen}
+
+
+\begin{document}
+
+\maketitle
+
+\noindent
+{\it Obligar i FYS1120 leverast elektronisk på Devilry -- {\rm \ttfamily http://devilry.ifi.uio.no/}. Du kan velge om du vil skrive han maskinelt, med til dømes \LaTeX, eller skanne håndskrivne ark. Skanner finst på bibliotek og terminalstuer.}
+
+\vspace{10mm}
+
+\begin{exercise}[Gradient, divergens og kvervling]
+\begin{itemize}
+	\item[\bf a)] Finn gradienten til desse skalarfelta: \\ \\
+      Gradienten vert rekna ut ved formelen 
+      \begin{align*}
+        \nabla f = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j} + \frac{\partial f}{\partial z}\mathbf{k}.
+      \end{align*}
+	\begin{itemize}
+		\item[(i)] $f(x,y,z) = x^2 y$
+                  \begin{equation*}
+                    \mathbf{\nabla}f = 2xy\mathbf{i} + x^2\mathbf{j}
+                  \end{equation*}
+		\item[(ii)] $g(x,y,z) = xyz$
+                  \begin{equation*}
+                    \mathbf{\nabla}g = yz\mathbf{i} + xz\mathbf{j} + xy\mathbf{k}
+                  \end{equation*}
+		\item[(iii)] $h(r,\theta,\phi) = \frac{1}{r} e^{r^2}$ {\it Hint: Bruk at $r = \sqrt{x^2+y^2+z^2}$, eller sjå etter formelen for gradient i kulekoordinater i Rottmann.}
+          Her vil me nytte formelen for gradient i kulekoordinatar. Den er gitt ved
+          \begin{align*}
+            \nabla f = \frac{\partial f}{\partial r}\mathbf{i}_r + \frac{1}{r}\frac{\partial f}{\partial \theta}\mathbf{i}_{\theta} + \frac{1}{r\sin\theta}\frac{\partial f}{\partial \phi}\mathbf{i}_{\phi}
+          \end{align*}
+          \begin{equation*}
+            \mathbf{\nabla}h = \left (-\frac{1}{r^2}e^{r^2} + 2e^{r^2} \right)\mathbf{i_r}
+          \end{equation*}
+	\end{itemize}
+	\item[b)] Finn divergensen og kvervlinga til desse vektorfelta: \\ \\
+      Divergensen finn me ved
+      \begin{align*}
+        \mathbf{\nabla}\cdot\mathbf{v} = \frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y} + \frac{\partial v_z}{\partial z}.
+      \end{align*}
+      Kvervlinga finn me ved
+      \begin{align*}
+        \mathbf{\nabla}\times\mathbf{v} = 
+        \begin{vmatrix}
+          \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+          \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+          v_x & v_y & v_z
+        \end{vmatrix}
+      \end{align*}
+	\begin{itemize}
+		\item[(i)] $\mathbf{u}(x,y,z) = (2xy, x^2, 0)$
+                  \begin{equation*}
+                    \mathbf{\nabla}\cdot\mathbf{u} = 2y
+                  \end{equation*}
+                  \begin{equation*}
+                    \mathbf{\nabla}\times\mathbf{u} = 
+                    \begin{vmatrix}
+                      \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+                      \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+                      2xy & x^2 & 0
+                    \end{vmatrix} = \mathbf{k}(2x - 2x) = \mathbf{0}
+                  \end{equation*}
+		\item[(ii)] $\mathbf{v}(x,y,z) = (e^{yz}, \text{ln}(xy), z)$
+                  \begin{equation*}
+                    \mathbf{\nabla}\cdot\mathbf{v} = \frac{1}{y} + 1
+                  \end{equation*}
+                  \begin{equation*}
+                    \mathbf{\nabla}\times\mathbf{v} =
+                    \begin{vmatrix}
+                      \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+                      \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+                      e^{yz} & \text{ln}(xy) & z
+                    \end{vmatrix} = ye^{yz}\mathbf{j} + \mathbf{k}\left(\frac{1}{x} - ze^{yz}\right)
+                  \end{equation*}
+		\item[(iii)] $\mathbf{w}(x,y,z) = (yz, xz, xy)$
+                  \begin{equation*}
+                    \mathbf{\nabla}\cdot\mathbf{w} = 0
+                  \end{equation*}
+                  \begin{equation*}
+                    \mathbf{\nabla}\times\mathbf{w} = 
+                    \begin{vmatrix}
+                      \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+                      \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+                      yz & xz & xy
+                    \end{vmatrix} = \mathbf{0}
+                  \end{equation*}
+		\item[(iv)] $\mathbf{a}(x,y,z) = (y^2z, -z^2\sin y + 2xyz, 2z\cos y + y^2x)$
+                  \begin{equation*}
+                    \mathbf{\nabla}\cdot\mathbf{a} = 2xz - z^2\cos y + 2\cos y = 2xz + \cos y(2 - z^2)
+                  \end{equation*}
+                  \begin{align*}
+                    \mathbf{\nabla}\times\mathbf{a} &=
+                    \begin{vmatrix}
+                      \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 
+                      \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+                      y^2z & 2xyz - z^2\sin y & 2z\cos y + y^2x
+                    \end{vmatrix} \\ &= \mathbf{i}(2xt - 2z\sin y - 2xy + 2z\sin y) \\
+                    &- \mathbf{j}(y^2 - y^2) \\
+                    &+ \mathbf{k}(2yz - 2yz) \\
+                    &= \mathbf{0}
+                  \end{align*}
+	\end{itemize}
+	\item[c)] Kva vil det seie at eit felt er {\it konservativt}, matematisk sett? Og kva vil det seie at t.d. eit gravitasjonsfelt er konservativt, fysisk sett? Er det nokon av felta i {\bf b)} som er konservative? Har nokon av dei i så fall noko med {\bf a)} å gjere? \\ \\
+          Felta (i), (iii) og (iv) er konservative. Dette kan me sjå då kvervlinga vert $\mathbf{0}$. Det at eit felt er konservativt betyr at energien er bevart. For gravitasjon vil det seie at kva veg me vel å bevege oss langs er likegyldig. Den potensielle energien i begge endepunkta vil vere den same. Viss feltet er konservativt $\exists$ $\mathbf{F} = \nabla\phi$. I oppgåve 1 har me at 1a)(i) er eit skalarpotensial til feltet 1b)(i) og 1a)(ii) er eit skalarpotensial til feletet 1b)(iii). \\ \\
+	\item[d)] Viss me tek divergensen av gradienten til eit skalarfelt $f$, $\nabla \cdot \nabla f$, så får me eit nytt skalarfelt. Operatoren $\nabla \cdot \nabla$ skriv me ofte $\nabla^2$, og han vert kalla {\it laplaceoperatoren}. 
+
+	Bruk laplaceoperatoren på desse skalarfelta: \\ \\
+    Laplaceoperatoren vert formelen for divergensen på ein gradient.
+	\begin{itemize}
+		\item[(i)] $j(x,y,z) = x^2 + xy + yz^2$
+                  \begin{align*}
+                    \mathbf{\nabla}j &= (2x + y)\mathbf{i} + (x + z^2)\mathbf{j} + 2yz\mathbf{k} \\
+                    \mathbf{\nabla}\cdot\mathbf{\nabla}j &= \nabla^2j = 2 + 2y
+                  \end{align*}
+		\item[(ii)] $h(r,\theta,\phi) = \frac{1}{r} e^{r^2}$
+          Her nyttar me formelen for gradient i kulekoordinatar. Den er gitt ved
+          \begin{align*}
+            \nabla^2f = \left( \frac{\partial^2}{\partial r^2} + \frac{2}{r}\frac{\partial}{\partial r} \right)f + \frac{1}{r^2\sin\theta}\frac{\partial}\
+            {\partial \theta}\left( \sin\theta\frac{\partial}{\partial\theta} \right)f + \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2}f.
+          \end{align*}
+          \begin{align*}
+            \nabla^2h &= \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\left(-\frac{1}{r^2}e^{r^2} + 2e^{r^2}\right)\right) = \frac{1}{r^2}\frac{\partial}{\partial r}\left(2r^2e^{r^2} - e^{r^2}\right) \\
+            &= \frac{1}{r^2}\left(4re^{r^2} + 4r^3e^{r^2} - 2re^{r^2}\right ) = \frac{4}{r}e^{r^2} + 4re^{r^2} - \frac{2}{r}e^{r^2} \\
+            &= 2e^{r^2}\left(2r + \frac{1}{r}\right)
+          \end{align*}
+	\end{itemize}
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}[Vektoridentitetar]
+
+\noindent La $\mathbf{a},\mathbf{b}$ og $\mathbf{c}$ vere tre-dimensjonale vektorar. Vis følgande identitet:
+\begin{align}
+	\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = \mathbf{b}(\mathbf{a}\cdot\mathbf{c}) - \mathbf{c}(\mathbf{a}\cdot\mathbf{b}).
+\end{align}
+\noindent Du kan godt anta at vektorane er på formen $\mathbf{a} = (a_1,a_2,a_3)$ osb. \\ \\
+Me viser identiteta ved å rekne ut venstre sida av likhetsteiknet på komponentform. Etterpå legger me til og trekk ifrå 6 ledd som me bruker til å sortere uttrykket til det liknar på det på høgre sida av likhetsteiknet.
+\begin{align*}
+  \mathbf{b}\times\mathbf{c} &= 
+  \begin{vmatrix}
+    \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+    b_1 & b_2 & b_3 \\
+    c_1 & c_2 & c_3
+  \end{vmatrix} \\
+  &= \mathbf{i}(b_2c_3 - b_3c_2) - \mathbf{j}(b_1c_3 - b_3c_1) + \mathbf{k}(b_1c_2 - b_2c_1)
+\end{align*}
+\begin{align*}
+  \mathbf{a}\times(\mathbf{b}\times\mathbf{c}) &=
+  \begin{vmatrix}
+    \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+    a_1 & a_2 & a_3 \\
+    b_2c_3 - b_3c_2 & b_1c_3 - b_3c_1 & b_1c_2 - b_2c_1
+  \end{vmatrix} \\
+  &= \mathbf{i}(a_2(b_1c_2 - b_2c_1) + a_3(b_1c_3 - b_3c_1)) \\
+  &- \mathbf{j}(a_1(b_1c_2 - b_2c_1) + a_3(b_3c_2 - b_2c_3)) \\
+  &+ \mathbf{k}(a_1(b_3c_1 - b_1c_3) + a_2(b_3c_2 - b_2c_3))
+\end{align*}
+No legg me til ledda $\mathbf{i}(a_1b_1c_1 - a_1b_1c_1),\hspace{1mm} \mathbf{j}(a_2b_2c_2 - a_2b_2c_2)$ og $\mathbf{k}(a_3b_3c_3 - a_3b_3c_3)$. Me sorterer litt og får
+\begin{align*}
+  \mathbf{a}\times(\mathbf{b}\times\mathbf{c}) &= \mathbf{i}(a_1b_1c_1 + a_2b_1c_2 + a_3b_1c_3) - \mathbf{i}(a_1b_1c_1 + a_2b_2c_1 + a_3b_3c_1) \\
+  &+ \mathbf{j}(a_1b_2c_1 + a_2b_2c_2 + a_3b_2c_3) - \mathbf{j}(a_1b_1c_2 + a_2b_2c_2 + a_3b_3c_2) \\
+  &+ \mathbf{k}(a_1b_3c_1 + a_2b_3c_2 + a_3b_3c_3) - \mathbf{k}(a_1b_1c_3 + a_2b_2c_3 + a_3b_3c_3) \\
+  &= (b_1\mathbf{i} + b_2\mathbf{j} + b_3\mathbf{k})(a_1c_1 + a_2c_2 + a_3c_3) \\
+  &- (c_1\mathbf{i} + c_2\mathbf{j} + c_3\mathbf{k})(a_1b_1 + a_2b_2 + a_3b_3) \\
+  &= \mathbf{b}(\mathbf{a}\cdot\mathbf{c}) - \mathbf{c}(\mathbf{a}\cdot\mathbf{b})
+\end{align*}
+\end{exercise}
+
+\newpage
+
+\begin{exercise}[Fluksintegral og Gauss' teorem]
+\begin{itemize}
+	\item[\bf a)] Eit vektorfelt er gitt ved
+	\begin{align}
+		\mathbf{v}(x,y,z) = (y, x, z-x).
+	\end{align}
+	Rekn ut fluksen av dette feltet ut av einingskuben, som er gitt ved $x, y, z \in [0,1]$. {\it Hint: Berekn fluksen, $\iint_A \mathbf{v} \cdot \mathbf{n} \, dxdy$, der $\mathbf{n}$ er einingsnormalvektoren for flata A, for kvar sideflate av kuben og legg saman.} \\ \\
+
+        Kuben har 6 sider som me rekner ut kvar for seg og legg saman til slutt. \\
+        For sida $x = 1$ får me $\mathbf{n} = dydz\mathbf{i}$ i positiv $x$-retning.
+        \begin{equation*}
+          \int_0^1\int_0^1y\hspace{1mm}dydz = \frac{1}{2}.
+        \end{equation*}
+        For sida $x = 0$ får me $\mathbf{n} = -dydz\mathbf{i}$ i negativ $x$-retning.
+        \begin{equation*}
+          \int_0^1\int_0^1-y\hspace{1mm}dydz = -\frac{1}{2}.
+        \end{equation*}
+        For sida $y = 1$ får me $\mathbf{n} = dxdz\mathbf{j}$ i positiv $y$-retning.
+        \begin{equation*}
+          \int_0^1\int_0^1x\hspace{1mm}dxdz = \frac{1}{2}.
+        \end{equation*}
+        For sida $y = 0$ får me $\mathbf{n} = -dxdz\mathbf{j}$ i negativ $y$-retning.
+        \begin{equation*}
+          \int_0^1\int_0^1-x\hspace{1mm}dxdz = -\frac{1}{2}.
+        \end{equation*}
+        For sida $z = 1$ får me $\mathbf{n} = dxdy\mathbf{k}$ i positiv $z$-retning.
+        \begin{equation*}
+          \int_0^1\int_0^11-x\hspace{1mm}dxdy = \frac{1}{2}.
+        \end{equation*}
+        For sida $z = 0$ får me $\mathbf{n} = -dxdy\mathbf{k}$ i negativ $z$-retning.
+        \begin{equation*}
+          \int_0^1\int_0^1x\hspace{1mm}dxdy = \frac{1}{2}.
+        \end{equation*}
+        Totalt får me då
+        \begin{equation*}
+          \int_S\mathbf{v}\cdot\mathbf{n}\hspace{1mm}d\sigma = \frac{1}{2} - \frac{1}{2} + \frac{1}{2} - \frac{1}{2} + \frac{1}{2} + \frac{1}{2} = 1.
+        \end{equation*}
+
+	\item[\bf b)] Bruk Gauss' teorem til å berekne den samme fluksen. Sjekk at du får samme svar!\\ \\
+          Me startar med å rekne ut divergensen og etterpå rekner me ut volumintegralet.
+          \begin{equation*}
+            \mathbf{\nabla}\cdot\mathbf{v} = 1.
+          \end{equation*}
+          Me har at det infinitesimale volumelementet er gitt ved $d\tau = dxdydz$
+          \begin{equation*}
+            \int_V\mathbf{\nabla}\cdot\mathbf{v}\hspace{1mm}d\tau = \int_0^1\int_0^1\int_0^1 1 \hspace{1mm} dxdydz = 1.
+          \end{equation*}
+
+\end{itemize} 
+\end{exercise}
+
+\begin{exercise}[Linjeintegral og Stokes' teorem]
+
+\noindent Endå eit vektorfelt er gitt ved
+	\begin{align}
+		\vec{w}(x,y,z) = (2x-y)\vec{i} - y^2\vec{j} - y^2z\vec{k},
+	\end{align}
+	der $\vec{i}, \vec{j}$ og $\vec{k}$ er einingsvektorene i høvesvis $x,y$ og $z$-retning. Vi har òg ei {\it lukka kurve} $\gamma$ gitt ved $x^2+y^2 = 1$, $z=1$.
+	\begin{itemize}
+		\item[\bf a)] Rekn ut divergensen til $\vec{w}$.
+                  \begin{equation*}
+                    \mathbf{\nabla}\cdot\mathbf{w} = 2 - 2y + y^2.
+                  \end{equation*}
+		\item[\bf b)] Rekn ut kvervlinga til $\vec{w}$.
+                  \begin{equation*}
+                    \mathbf{\nabla}\times\mathbf{w} = 
+                    \begin{vmatrix}
+                      \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+                      \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+                      2x-y & -y^2 & -y^2z
+                    \end{vmatrix} = -2yz\mathbf{i} + \mathbf{k}.
+                  \end{equation*}
+		\item[\bf c)] Parametrisér kurva $\gamma$ som ein vektor $\vec{\gamma}(t)$, og finn $d\vec{\gamma}$ uttrykt ved $dt$. \\ \\
+                  Me ser at $\gamma$ utgjer ein sirkel. Me vil difor parametrisere ved hjelp av sylinderkoordinatar. Då har me at $x = r\cos t$, $y = r\sin t$ og $z = 1$, kor $r = 1$ og $t \in [0, 2\pi]$. Då får me
+                  \begin{align*}
+                    &\mathbf{\gamma}(t) = \cos t\mathbf{i} + \sin t\mathbf{j} + \mathbf{k}, \\
+                    &d\mathbf{\gamma} = (-\sin t\mathbf{i} + \cos t\mathbf{j})dt.
+                  \end{align*}
+		\item[\bf d)] Rekn ut sirkulasjonen til $\vec{w}$ rundt $\gamma$. \\ \\
+                  Her beveger me oss rundt sirkelen i ein fast avstand frå origo. Då har me at $r = 1$. Me bruker sylinderkoordinatar på $\mathbf{w}$. Då får me $\mathbf{w}(t) = (2\cos t - \sin t)\mathbf{i} - \sin^2 t\mathbf{j} - \sin^2 t\mathbf{k}$. Sirkulasjonen vert
+                  \begin{align*}
+                    \int_{\gamma}\mathbf{w}\cdot d\mathbf{\gamma} &= \int_0^{2\pi} \sin^2 t - 2\cos t\sin t - \cos t \sin^2 t \hspace{1mm} dt \\
+                    &= \frac{1}{2}\int_0^{2\pi}1 - \cos(2t)\hspace{1mm} dt - \int_0^{2\pi}\sin(2t)\hspace{1mm} dt - \int_0^{2\pi}\cos t \sin^2t \hspace{1mm} dt \\
+                    &= \frac{1}{2}\biggl[t - \frac{1}{2}\sin(2t)\biggr]_0^{2\pi} + \biggl[\frac{1}{2}\cos(2t)\biggr]_0^{2\pi} - \int_0^{2\pi}\cos t\sin^2t\hspace{1mm} dt.
+                  \end{align*}
+                  På det siste leddet bruker me substitusjon. Det gjer oss
+                  \begin{align*}
+                    &u = \sin t, \qquad &u(2\pi) = 0 \\
+                    &dt = \frac{du}{\cos t}, \qquad &u(0) = 0.
+                  \end{align*}
+                  Til slutt vert det
+                  \begin{equation*}
+                    \int_{\gamma}\mathbf{w}\cdot d\mathbf{\gamma} = \pi - \biggl[\frac{1}{3}u^3\biggl]_0^0 = \pi.
+                  \end{equation*}
+		\item[\bf e)] Bruk Stokes' teorem til å finne sirkulasjonen ved hjelp av kvervlinga til $\vec{w}$. Sjekk at du får samme svar! \\ \\
+                  Me bruker sylinderparametrisering i $\mathbf{\nabla}\times\mathbf{w}$ ($x = r\sin t$, $y = r\cos t$ og $z = 1$). No vil me integrere over heile området. Me har difor $r \in [0, 1]$. Då får me 
+                  \begin{align*}
+                    \int_S(\mathbf{\nabla}\times\mathbf{w})\cdot d\mathbf{\gamma} &= \int_0^1\int_0^{2\pi}(-2\sin t\mathbf{i} + \mathbf{k})\cdot(-\sin t\mathbf{i} + \cos t\mathbf{j})r\hspace{1mm}drdt \\
+                    &= \int_0^1\int_0^{2\pi}2r\sin^2t\hspace{1mm}drdt = \int_0^{2\pi}\sin^2t\hspace{1mm} dt = \frac{1}{2}\int_0^{2\pi}1-\cos(2t)\hspace{1mm}dt \\
+                    &= \frac{1}{2}\biggl[t - \frac{1}{2}\sin(2t)\biggr]_0^{2\pi} = \pi.
+                  \end{align*}
+	\end{itemize}
+\end{exercise}
+
+\end{document}
+
