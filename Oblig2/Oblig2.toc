@@ -1,0 +1,4 @@
+\select@language {norsk}
+\contentsline {section}{\numberline {1}Partikkel i elektrisk felt}{3}
+\contentsline {section}{\numberline {2}Partikkel i magnetisk felt}{6}
+\contentsline {section}{\numberline {3}Partikkel i syklotron}{10}
