@@ -53,7 +53,7 @@
     posisjonen gå som ein kvadratisk funksjon. Dette vil hjelpe oss med å verifisere den 
     analytiske løysninga.}
   \end{figure}
-  Når me skal utleie den analytiske løysninga vil me nytta Newtons andre lov i lag med uttrykket for krafta i eit $\mathbf{E}$-felt. Då får me
+  Når me skal utleie den analytiske løysninga vil me nytte Newtons andre lov i lag med uttrykket for krafta i eit $\mathbf{E}$-felt. Då får me
   \begin{align*}
     \mathbf{F} = q\mathbf{E} = m\mathbf{a}(t) \qquad \Rightarrow \qquad \mathbf{a}(t) = \frac{q}{m}\mathbf{E}.
   \end{align*}
@@ -79,14 +79,14 @@
     \caption{Her ser me plott for hastighetane i $x$, $y$ og $z$-retning mot tid. Siden $\mathbf{E}$-feltet har komponenta i alle tre retningane har me ein konstant akselerasjon 
     som gjer oss ein lineært aukande hastighet for alle retningane.}
   \end{figure}
-  Me kan sjå at dette vil bli ei ballistisk rørsle då partikkelen vil ha ei konstant aukande fart. Dette kan me sjå frå den analytiske løysninga vil gje oss eit andregradspolynom for 
-  posisjonen. Partikkelen vil difor bli ``skutt ut''.
+  Me kan sjå at dette vil bli ei ballistisk rørsle då partikkelen vil ha ei konstant aukande fart. Resultatet av dette gjer oss ein posisjon som går som ein andregradsfunksjon.
+  Partikkelen vil difor bli ``skutt ut''.
 
   \begin{figure}[H]
     \centering
     \includegraphics[width=300px]{D.png}
     \caption{Her vil me sjå korleis partikkelen forflyttar seg i rommet. Me ser derimot ikkje korleis han auker i hastighet. Viss me hadde vist dette som ein film mot tid ville me 
-    sett korleis avstanden ville auke mellom kvart sekund heile vegen.} % Prøv å vis dette på ein eller annan måte
+    sett korleis avstanden mellom kvart sekund ville auke.}
   \end{figure}
 
 
@@ -110,13 +110,15 @@
   \begin{figure}[H]
     \centering
     \includegraphics[width=300px]{2A3.png}
-    \caption{Her kjem det tydeleg fram korleis partikkelen beveger seg i ein sirkelbane i magnetfeltet.}
+    \caption{Her kjem det tydeleg fram korleis partikkelen beveger seg i ein sirkelbane i magnetfeltet. Dette fordi partikkelen vil ha ein konstant kraftkomponent inn mot sirkelen.
+    Me får då ein sentripetalakselerasjon som vil trekke partikkelen rundt i ein sirkelbane.}
   \end{figure}
+
   Programmet $\texttt{Oppgave2.py}$ gjer oss utskrifta
   \begin{center}
     \input{utskrift.txt}
   \end{center}
-  Måten dette vert rekna ut vil blir forklart i programmet til slutt i besvarelsen. \\ \\
+  Måten dette vert rekna ut vil bli forklart i programmet til slutt i besvarelsen. \\ \\
 
   For å finne syklotronfrekvensen nyttar me uttrykket for krafta frå det magnetiske feltet i lag med Newtons andre lov.
   \begin{align*}
@@ -209,9 +211,9 @@
   \end{align*}
   Me får
   \begin{align*}
-    E_k = \frac{1}{2}m\left( \frac{qrB}{m} \right)^2 = \frac{1}{2}\frac{\left( qrb \right)^2}{m}.
+    E_k = \frac{1}{2}m\left( \frac{qrB}{m} \right)^2 = \frac{1}{2}\frac{\left( qrB \right)^2}{m}.
   \end{align*}
-  Me setter inn verdiane for eit proton som finn på nettet, $m_P = 1.673\times10^{-27}$ kg, $q = 1.602\times10^{-19}$ C.
+  Me setter inn verdiane for eit proton som me finn i ein tabell, $m_P = 1.673\times10^{-27}$ kg, $q = 1.602\times10^{-19}$ C.
   \begin{align*}
     E_k &= \frac{1}{2}\frac{\left( (1.602\times10^{-19}\text{ C})(1 \text{ T})(1\text{ m}) \right)^2}{1.673\times10^{-27}\text{ kg}} \\
     &\approx 7.67\times10^{-12}\text{ J} \\
@@ -223,8 +225,24 @@
   \end{align*}
   kor c er lysfarta. Dette er ei såpass høg hastighet at me ikkje kan neglisjere den relativistiske effekten på hastigheta. \\ \\
 
+  For å rekne ut antal rundar som trengs vil me finne eit forholdstal mellom $E_k$ og tilført energi $U$. Dette vil vere gjeve ved
+  \begin{align*}
+    E_k = nU,
+  \end{align*}
+  kor $n$ vil vere antal rundar. Siden protonet opplever ei energitilføring to gonger per runde vil me få formelen
+  \begin{align*}
+    n = \frac{E_k}{2U}.
+  \end{align*}
+  Då har me at $U$ er gjeve ved
+  \begin{align*}
+    U = qV
+  \end{align*}.
+  Eg antar at ein eksperimentelt tilgjengeleg spenning vil vere $V = 50$ kV. Det gjer oss
+  \begin{align*}
+    U &= qV = (1.602\times10^{-19} \text{C})(50\times10^3\text{V})
+    &\approx 8.01\times10^{-15}\text{J}.
+  \end{align*}
 
-  Fyll inn siste oppgåva.
 
 
 
