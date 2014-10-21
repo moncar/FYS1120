@@ -48,7 +48,7 @@
     \centering
     \includegraphics[width=300px]{A.png}
     \caption{I dette plottet ser me plott over posisjonen til partikkelen i $x$-retning mot 
-    tid samt den analytiske løysninga som ligg over.
+    tid samt den analytiske løysninga som ligg over. Desse ligg heilt oppå einannan.
     Me kan sjå at grunna konstant akselerasjon vil me ha ein lineær hastighet. Difor må 
     posisjonen gå som ein kvadratisk funksjon. Dette vil hjelpe oss med å verifisere den 
     analytiske løysninga.}
@@ -70,17 +70,17 @@
   \begin{figure}[H]
     \centering
     \includegraphics[width=300px]{C1.png}
-    \caption{Her ser me plott for posisjonane i $x$, $y$ og $z$-retning mot tid.}
+    \caption{Her ser me plott for posisjonane i $x$, $y$ og $z$-retning mot tid. Partikkelen fylgjer retningen til $\mathbf{E}$-feltet.}
   \end{figure}
 
   \begin{figure}[H]
     \centering
     \includegraphics[width=300px]{C2.png}
-    \caption{Her ser me plott for hastighetane i $x$, $y$ og $z$-retning mot tid. Siden $\mathbf{E}$-feltet har komponenta i alle tre retningane har me ein konstant akselerasjon 
+    \caption{Her ser me plott for hastighetane i $x$, $y$ og $z$-retning mot tid. Siden $\mathbf{E}$-feltet har komponentar i alle tre retningane har me ein konstant akselerasjon 
     som gjer oss ein lineært aukande hastighet for alle retningane.}
   \end{figure}
   Me kan sjå at dette vil bli ei ballistisk rørsle då partikkelen vil ha ei konstant aukande fart. Resultatet av dette gjer oss ein posisjon som går som ein andregradsfunksjon.
-  Partikkelen vil difor bli ``skutt ut''.
+  Forflyttninga mellom kvar tideining vil auke og partikkelen vert ``skoten ut''.
 
   \begin{figure}[H]
     \centering
@@ -104,7 +104,7 @@
   \begin{figure}[H]
     \centering
     \includegraphics[width=300px]{2A2.png}
-    \caption{Plottet viser oss hastighetane i $x$, $y$ og $z$-retning mot tid. Me får liknande svingningar for hastighetane som for posisjonane.}
+    \caption{Plottet viser oss hastighetane i $x$, $y$ og $z$-retning mot tid. Me får liknande svingningar for hastighetane som for posisjonane. Hastighetane svinger derimot om 0.}
   \end{figure}
 
   \begin{figure}[H]
@@ -146,7 +146,7 @@
   \end{align*}
   Omlaupsperioden $T$ er gjeve ved 
   \begin{align*}
-    T = \frac{2\pi}{\omega}.
+    T = \frac{2\pi r}{v} = \frac{2\pi}{\omega}.
   \end{align*}
   Då fylgjer det at
   \begin{align*}
@@ -156,8 +156,7 @@
   \begin{align*}
     T = \frac{2\pi (2)}{(3)(3)} \approx 1.3962.
   \end{align*}
-  Dette er veldig nærme det me får frå det numeriske resultatet. Eventuelle feil vil kome frå numerisk avrunding då me på datamaskinen ikkje klarer å representere flyttal eksakt. Det vil 
-  og vere vanskeleg å køyre ein eksakt if-test med flyttal.
+  Dette er veldig nærme det me får frå det numeriske resultatet. Eventuelle feil vil kome frå feil i Euler-Cromer og numerisk avrunding.
 
   \begin{figure}[H]
     \centering
@@ -244,7 +243,7 @@
   \end{align*}
   Då finner me antal rundar til å vere
   \begin{align*}
-    n &= \frac{7.67\times10^{-12}\text{ J}}{2(8.01\times10^{-15}\text {J}} \\
+    n &= \frac{7.67\times10^{-12}\text{ J}}{2(8.01\times10^{-15}\text {J})} \\
     &\approx 479 \text{ Rundar}.
   \end{align*}
   Frekvensen er definert som ``ein runde per sekund''. Det gjer oss
