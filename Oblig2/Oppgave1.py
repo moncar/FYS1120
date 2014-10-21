@@ -1,32 +1,40 @@
 from numpy import zeros, linspace, sin, array, amin, amax
-from matplotlib.pylab import plot, show, title, legend, xlabel, ylabel, xkcd, hold, figure, savefig
+from matplotlib.pylab import plot, show, title, legend, xlabel,\
+        ylabel, hold, figure, savefig
 from mpl_toolkits.mplot3d.axes3d import Axes3D
 
-# Testytest
-#xkcd()
-
+"""
+Superclass used for calculation, plotting and storing of necessary
+components for a particle in an electric field.
+"""
 class ParticleInElectricField:
 
+    """
+    Storing variables and creating necessary arrays.
+    """
     def __init__(self, E, m, q, r0, v0, t_start, t_final, dt):
 
-        self.E = E
-        self.m = m
-        self.q = q
-        self.r0= r0
-        self.v0 = v0
-        self.t_start = t_start
-        self.t_final = t_final
-        self.dt = dt
+        self.E = E # Electric field.
+        self.m = m # Mass.
+        self.q = q # Charge.
+        self.r0= r0 # Initial position.
+        self.v0 = v0 # Initial velocity.
+        self.t_start = t_start # Start value for time.
+        self.t_final = t_final # End value for time.
+        self.dt = dt # Timestep.
 
         # Creating arrays and timestep.
-        self.n = int(self.t_final/float(self.dt))
-        self.t = linspace(self.t_start, self.t_final, self.n+1)
-        self.r = zeros(shape=(self.n+1, 3))
+        self.n = int(self.t_final/float(self.dt)) # Number of iterations.
+        self.t = linspace(self.t_start, self.t_final, self.n+1) # Time.
+        self.r = zeros(shape=(self.n+1, 3)) # Array containing positions.
         self.r[0, :] = self.r0
-        self.v = zeros(shape=(self.n+1, 3))
+        self.v = zeros(shape=(self.n+1, 3)) # Array containing velocities.
         self.v[0, :] = self.v0
-        self.EXACT = zeros(shape=(self.n+1, 3))
+        self.EXACT = zeros(shape=(self.n+1, 3)) # Array containing positions.
 
+    """
+    Calculating path of particle in an electric field.
+    """
     def calculatePath(self):
 
         # Implementing Euler-Cromer.
@@ -39,6 +47,9 @@ class ParticleInElectricField:
             # This formula is found from analytical integration.
             self.EXACT[i+1, :] = 0.5*self.q/float(self.m)*self.E*self.t[i]**2
 
+    """
+    Versatile method for plotting different values and components.
+    """
     def plotPath(self, TITLE, optn):
 
         if optn == 0:
@@ -98,7 +109,8 @@ class ParticleInElectricField:
             # Something is funky here...
             fig = figure()
             ax = fig.add_subplot(1, 1, 1, projection='3d')
-            ax.plot3D(self.r[:, 0], self.r[:, 1], self.r[:, 2], label='Position of particle')
+            ax.plot3D(self.r[:, 0], self.r[:, 1], self.r[:, 2],\
+                      label='Position of particle')
             ax.legend(loc = 'lower left')
             ax.set_xlabel('Position in x-direction')
             ax.set_ylabel('Position in y-direction')
