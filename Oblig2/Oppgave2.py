@@ -1,5 +1,5 @@
 from Oppgave1 import ParticleInElectricField
-from numpy import linalg, cross, array
+from numpy import linalg, cross, array, sin, cos
 
 """
 Subclass of ParticleInElectricField.
@@ -32,7 +32,6 @@ class ParticleInMagneticField(ParticleInElectricField):
     """
     def calculateRevolutionTime(self):
 
-        eps = 1.0e-3
         for i in range(1, self.n):
             # From the first graph we see that x(t) oscillates between positive
             # and negative values. We want to find the point where the function

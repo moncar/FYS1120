@@ -7,6 +7,7 @@ from mpl_toolkits.mplot3d.axes3d import Axes3D
 Superclass used for calculation, plotting and storing of necessary
 components for a particle in an electric field.
 """
+
 class ParticleInElectricField:
 
     """
@@ -85,7 +86,7 @@ class ParticleInElectricField:
             legend(('x(t)', 'y(t)', 'z(t)'), loc=2)
             xlabel("t in [0, 1]")
             ylabel("Positions for x, y and z-direction")
-#            savefig('3A1.png')
+#            savefig('2A1.png')
             show()
             
             figure()
@@ -98,7 +99,7 @@ class ParticleInElectricField:
             legend(('vx(t)', 'vy(t)', 'vz(t)'), loc=2)
             xlabel('t in [0, 1]')
             ylabel('Velocities in x, y and z-direction')
-#            savefig('3A2.png')
+#            savefig('2A2.png')
             show()
 
         else:
@@ -106,7 +107,6 @@ class ParticleInElectricField:
             """
             Plotting the path of the particle in 3D.
             """
-            # Something is funky here...
             fig = figure()
             ax = fig.add_subplot(1, 1, 1, projection='3d')
             ax.plot3D(self.r[:, 0], self.r[:, 1], self.r[:, 2],\
