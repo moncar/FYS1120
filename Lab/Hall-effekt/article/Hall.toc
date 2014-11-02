@@ -1,1 +1,7 @@
 \select@language {norsk}
+\contentsline {section}{Oppg\IeC {\r a}ve 1}{3}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 1}{3}
+\contentsline {section}{Oppg\IeC {\r a}ve 2}{5}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.1}{5}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.2}{5}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.3}{6}

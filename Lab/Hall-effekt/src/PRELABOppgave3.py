@@ -5,8 +5,8 @@ from numpy import pi, sqrt, zeros
 my_0 = (4*pi)*10**(-7) # vakuum permeabiliteten.
 a = 0.02 # radius i meter.
 t = 0.035 # høgde i meter.
-I = 10.0 # Ampere, denne må kunne endrast.
-A = 2*pi*a # Areal over sida til magneten i kvadratmeter.
+I = 0.1 # Ampere, denne må kunne endrast.
+A = pi*a**2 # Areal over sida til magneten i kvadratmeter.
 V = pi*a**2*t # Volumet til sylinderen i kubikkmeter.
 j = I*A/float(V) # Straumtetthet i Ampere per meter.
 Bx = lambda h: my_0/2.0*j*((h + t)/sqrt((h + t)**2 + a**2) - h/sqrt(h**2 + a**2))

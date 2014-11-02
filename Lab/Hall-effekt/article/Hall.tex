@@ -51,4 +51,73 @@
 \tableofcontents
 \newpage
 
+\section*{Oppgåve 1}
+\addcontentsline{toc}{section}{Oppgåve 1}
+
+  \subsection*{PRELAB-Oppgåve 1}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 1}
+    Me vil lage eit program som tek imot datapunkter $x$ og $y$ og gjer oss eit plott over punkta mot eit polynom som interpolerer dei. \\ \\
+    Eg har nytta Python kor metodane $\texttt{polyval}$ og $\texttt{polyfit}$ ligg i numpy-biblioteket. Me er då interesserte i eit program som les datapunkt frå ei fil
+    og prøver å finne eit polynom som gjer oss ein god modell.
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave1.py}
+
+
+\newpage
+
+
+\section*{Oppgåve 2}
+\addcontentsline{toc}{section}{Oppgåve 2}
+
+  \subsection*{PRELAB-Oppgåve 2.1}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2.1}
+    Me vil vise at straumtettheten $j$ er identisk med magnetiseringa $M$. \\ \\
+    Det enklaste er å sjå på einingane til $j$ og $M$. Me får
+    \begin{align*}
+      j = \frac{dI}{dx} = \frac{I}{t} \sim \frac{\text{A}}{\text{m}},
+    \end{align*}
+    kor straumen $I$ er målt i Ampere og distansen $dx$ er gjeve i meter. $M$ er gjeve som magnetisk moment per volumeining. Då får me
+    \begin{align*}
+      M = \frac{\vb{\mu}}{V} = \frac{IA}{V} = \frac{I\pi a^2}{\pi a^2t} = \frac{I}{t} \sim \frac{\text{A}\text{m}^2}{\text{m}^3} = \frac{\text{A}}{{m}}.
+    \end{align*}
+    I tillegg til å få dei same einingane veit me at me jobber med dei same ``metrane''.
+
+  \subsection*{PRELAB-Oppgåve 2.2}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2.2}
+    Vis at me ved å integrere opp overflatestraumen kan skrive magnetfeltet som
+    \begin{align*}
+      B_x(h) = \frac{\mu_0}{2}j\left[ \frac{h + t}{\sqrt{(h + t)^2 + a^2}} - \frac{h}{\sqrt{h^2 + a^2}} \right].
+    \end{align*} \\ \\
+    Me set inn uttrykket for straumen $I$ i uttrykket for $B_x(x)$.
+    \begin{align*}
+      j = \frac{dI}{dx} \qquad \Rightarrow \qquad I = j\ dx
+    \end{align*}
+    Då får me 
+    \begin{align*}
+      B_x &= \frac{\mu_0}{2}I \frac{a^2}{(x^2 + a^2)^{3/2}} \\
+      &= \frac{\mu_0}{2}j\frac{a^2}{(x^2 + a^2)^{3/2}}\ dx \\
+      &= \frac{\mu_0}{2}ja^2\int_h^{h + t}\frac{dx}{(x^2 + a^2)^{3/2}} \\
+      &= \frac{\mu_0}{2}ja^2\left[ \frac{x}{a^2\sqrt{x^2 + a^2}} \right]_h^{h + t} \\
+      &= \frac{\mu_0}{2}j\left[ \frac{h + t}{\sqrt{(h + t)^2 + a^2}} - \frac{h}{\sqrt{h^2 + a^2}} \right].
+    \end{align*}
+
+  \subsection*{PRELAB-Oppgåve 2.3}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2.3}
+    I denne oppgåven vil me teste programmet frå $\textbf{PRELAB-Oppgåve 1}$ med likninga frå $\textbf{PRELAB-Oppgåve 2.2}$.
+    Me vil nytte 5-6 punkter for $t = 35$ mm og $a = 20$ mm. \\ \\
+    Fyrst finner me vakuum permeabiliteten $\mu_0 = 4\pi \times 10^{-7}$ Vs/(Am) frå læreboka. For å finne $j$ nyttar me resultatet frå $\textbf{PRELAB-Oppgåve 2.1}$.
+    \begin{align*}
+      j = M = \frac{IA}{V} = \frac{I\pi a^2}{\pi a^2t} = \frac{I}{t}.
+    \end{align*}
+    kor straumen $I$ vert valgt til $I = 0.1$ A. Me får då resultatet
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=400px]{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png}
+      \caption{Her kan me sjå korleis polyfit prøver å tilpasse eit polynom til 6 punkter. Desverre vil det for så få punkter vere vanskeleg å gje eit nøyaktig resultat.}
+    \end{figure}
+    og utskrifta;
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/Oppgave3.txt}
+    Programmet $\texttt{PRELABOppgave3.py}$ er gjeve ved;
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave3.py}
+
+
 \end{document}

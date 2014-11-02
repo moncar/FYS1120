@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  2 NOV 2014 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  3 NOV 2014 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,26 +519,129 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `Hall.toc'.
 
- [2] (./Hall.aux) ) 
+ [2]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 60.
+
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave1.py  (ve
+rbatim)
+
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 62--62
+[]\T1/cmtt/m/n/10.95 from matplotlib.pylab import plot, show, title, xlabel, yl
+abel,\[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 62--62
+[]\T1/cmtt/m/n/10.95 Klasse som les punkter frå ei fil, interpolerer med eit po
+lynom og[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 62--62
+[]                \T1/cmtt/m/n/10.95 self.points[0, counter] = float(values.spl
+it()[0])[] 
+ []
+
+
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 62--62
+[]                \T1/cmtt/m/n/10.95 self.points[1, counter] = float(values.spl
+it()[1])[] 
+ []
+
+
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 62--62
+[]    \T1/cmtt/m/n/10.95 Metode som nyttar numpy-biblioteket til å interpolere 
+punkta[] 
+ []
+
+[3]
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 62--62
+[]        \T1/cmtt/m/n/10.95 self.poly = polyfit(self.points[0, :], self.points
+[1, :], deg)[] 
+ []
+
+
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 62--62
+[]            \T1/cmtt/m/n/10.95 self.evaluated[i] = polyval(self.poly, self.po
+ints[0, i])[] 
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
+
+ []
+
+[5]
+<~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png, id=33, 578.16p
+t x 433.62pt>
+File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png Graphic fi
+le (type png)
+
+<use ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png>
+Package pdftex.def Info: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRE
+LAB3.png used on input line 114.
+(pdftex.def)             Requested size: 401.50146pt x 301.12352pt.
+
+Overfull \hbox (41.50146pt too wide) in paragraph at lines 114--115
+ [][] 
+ []
+
+File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/Oppgave3.txt  (verbati
+m)
+[6 </home/oyvind/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png>]
+File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave3.py  (ve
+rbatim)
+
+Overfull \hbox (98.32805pt too wide) in paragraph at lines 120--120
+[]\T1/cmtt/m/n/10.95 Bx = lambda h: my_0/2.0*j*((h + t)/sqrt((h + t)**2 + a**2)
+ - h/sqrt(h**2 + a**2))[] 
+ []
+
+[7] (./Hall.aux) ) 
 Here is how much of TeX's memory you used:
- 4608 strings out of 493108
- 63149 string characters out of 6140724
- 130898 words of memory out of 5000000
- 7979 multiletter control sequences out of 15000+600000
- 15523 words of font info for 42 fonts, out of 8000000 for 9000
+ 4672 strings out of 493108
+ 64691 string characters out of 6140724
+ 137898 words of memory out of 5000000
+ 8022 multiletter control sequences out of 15000+600000
+ 22503 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,38p,237b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.
-enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1
-095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on Hall.pdf (2 pages, 89522 bytes).
+ 38i,11n,38p,338b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.e
+nc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pf
+b>
+Output written on Hall.pdf (7 pages, 250848 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
