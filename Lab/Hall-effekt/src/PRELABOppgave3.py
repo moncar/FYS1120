@@ -14,7 +14,7 @@ Bx = lambda h: my_0/2.0*j*((h + t)/sqrt((h + t)**2 + a**2) - h/sqrt(h**2 + a**2)
 h = zeros(6) # Evalueringspunkter.
 evaluated = zeros(6) # Verdi av Bx i h.
 for i in range(6):
-    h[i] = i**3
+    h[i] = i
     evaluated[i] = Bx(h[i])
 
 with open('Oppgave3.txt', 'w') as f:
