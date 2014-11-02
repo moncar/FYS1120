@@ -119,5 +119,23 @@
     Programmet $\texttt{PRELABOppgave3.py}$ er gjeve ved;
     \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave3.py}
 
+  \subsection*{PRELAB-Oppgåve 2.4}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2.4}
+    Me er interesserte i å sjå på $B$-feltet i topp-flata av magneten og når $t \to \infty$. Då lurer me og på kva $B$-feltet midt i sylinderen vert for noko. \\ \\
+    Me startar med å sette inn $h = 0$ for å finne $B$-feltet i topp-flata. Me får
+    \begin{align*}
+      B_x(0) &= \frac{\mu_0}{2}j\left[ \frac{t}{\sqrt{t^2 + a^2}} - 0 \right] \\
+      &= \frac{\mu_0}{2}\frac{tj}{\sqrt{t^2 a^2}}.
+    \end{align*}
+    For $t \to \infty$ får me
+    \begin{align*}
+      \lim_{t \to \infty} B_x(h) &= \lim_{t \to \infty} \frac{\mu_0}{2}j\underbrace{\left[ \frac{t}{\sqrt{t^2}} - \frac{h}{\sqrt{h^2 + a^2}} \right]}_{\approx 1} \\
+      &= \frac{\mu_0}{2}j.
+    \end{align*}
+    Midt i sylinderen har me at $h = -h$ det gjer oss
+    \begin{align*}
+      B_x(-h) &= \frac{\mu_0}{2}j\left[ \frac{t - h}{\sqrt{(t - h)^2 + a^2}} + \frac{h}{\sqrt{h^2 + a^2}} \right].
+    \end{align*}
+
 
 \end{document}

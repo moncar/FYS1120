@@ -5,3 +5,4 @@
 \contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.1}{5}
 \contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.2}{5}
 \contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.3}{6}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.4}{7}
