@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  3 NOV 2014 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  3 NOV 2014 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,13 +23,6 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
@@ -426,18 +419,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (./Hall.aux)
 \openout1 = `Hall.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -504,12 +497,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -520,86 +513,81 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `Hall.toc'.
 
  [2]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 60.
-
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave1.py  (ve
 rbatim)
 
-Overfull \hbox (2.13574pt too wide) in paragraph at lines 62--62
-[]\T1/cmtt/m/n/10.95 from matplotlib.pylab import plot, show, title, xlabel, yl
-abel,\[] 
+Overfull \hbox (7.91602pt too wide) in paragraph at lines 58--58
+[]\OT1/cmtt/m/n/10.95 from matplotlib.pylab import plot, show, title, xlabel, y
+label,\[] 
  []
 
 
-Overfull \hbox (13.45248pt too wide) in paragraph at lines 62--62
-[]\T1/cmtt/m/n/10.95 Klasse som les punkter frå ei fil, interpolerer med eit po
-lynom og[] 
+Overfull \hbox (19.41339pt too wide) in paragraph at lines 58--58
+[]\OT1/cmtt/m/n/10.95 Klasse som les punkter fr^^Wa ei fil, interpolerer med ei
+t polynom og[] 
  []
 
 
-Overfull \hbox (13.45248pt too wide) in paragraph at lines 62--62
-[]                \T1/cmtt/m/n/10.95 self.points[0, counter] = float(values.spl
-it()[0])[] 
+Overfull \hbox (19.41339pt too wide) in paragraph at lines 58--58
+[]                \OT1/cmtt/m/n/10.95 self.points[0, counter] = float(values.sp
+lit()[0])[] 
  []
 
 
-Overfull \hbox (13.45248pt too wide) in paragraph at lines 62--62
-[]                \T1/cmtt/m/n/10.95 self.points[1, counter] = float(values.spl
-it()[1])[] 
+Overfull \hbox (19.41339pt too wide) in paragraph at lines 58--58
+[]                \OT1/cmtt/m/n/10.95 self.points[1, counter] = float(values.sp
+lit()[1])[] 
  []
 
 
-Overfull \hbox (2.13574pt too wide) in paragraph at lines 62--62
-[]    \T1/cmtt/m/n/10.95 Metode som nyttar numpy-biblioteket til å interpolere 
-punkta[] 
+Overfull \hbox (7.91602pt too wide) in paragraph at lines 58--58
+[]    \OT1/cmtt/m/n/10.95 Metode som nyttar numpy-biblioteket til ^^Wa interpol
+ere punkta[] 
  []
 
 [3]
-Overfull \hbox (36.08597pt too wide) in paragraph at lines 62--62
-[]        \T1/cmtt/m/n/10.95 self.poly = polyfit(self.points[0, :], self.points
-[1, :], deg)[] 
+Overfull \hbox (42.40814pt too wide) in paragraph at lines 58--58
+[]        \OT1/cmtt/m/n/10.95 self.poly = polyfit(self.points[0, :], self.point
+s[1, :], deg)[] 
  []
 
 
-Overfull \hbox (30.4276pt too wide) in paragraph at lines 62--62
-[]            \T1/cmtt/m/n/10.95 self.evaluated[i] = polyval(self.poly, self.po
-ints[0, i])[] 
+Overfull \hbox (36.65945pt too wide) in paragraph at lines 58--58
+[]            \OT1/cmtt/m/n/10.95 self.evaluated[i] = polyval(self.poly, self.p
+oints[0, i])[] 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 [5]
-<~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png, id=33, 578.16p
+<~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png, id=29, 578.16p
 t x 433.62pt>
 File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png Graphic fi
 le (type png)
 
 <use ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELAB3.png>
 Package pdftex.def Info: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRE
-LAB3.png used on input line 114.
+LAB3.png used on input line 110.
 (pdftex.def)             Requested size: 401.50146pt x 301.12352pt.
 
-Overfull \hbox (41.50146pt too wide) in paragraph at lines 114--115
+Overfull \hbox (41.50146pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
@@ -609,44 +597,40 @@ m)
 File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave3.py  (ve
 rbatim)
 
-Overfull \hbox (98.32805pt too wide) in paragraph at lines 120--120
-[]\T1/cmtt/m/n/10.95 Bx = lambda h: my_0/2.0*j*((h + t)/sqrt((h + t)**2 + a**2)
- - h/sqrt(h**2 + a**2))[] 
+Overfull \hbox (105.6437pt too wide) in paragraph at lines 116--116
+[]\OT1/cmtt/m/n/10.95 Bx = lambda h: my_0/2.0*j*((h + t)/sqrt((h + t)**2 + a**2
+) - h/sqrt(h**2 + a**2))[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
 [7] [8] (./Hall.aux) ) 
 Here is how much of TeX's memory you used:
- 4672 strings out of 493108
- 64691 string characters out of 6140724
- 137898 words of memory out of 5000000
- 8022 multiletter control sequences out of 15000+600000
- 22503 words of font info for 58 fonts, out of 8000000 for 9000
+ 4428 strings out of 493108
+ 62406 string characters out of 6140724
+ 137761 words of memory out of 5000000
+ 7798 multiletter control sequences out of 15000+600000
+ 13084 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,17n,38p,338b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt109
-5.pfb>
-Output written on Hall.pdf (8 pages, 256668 bytes).
+ 38i,17n,38p,338b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb>
+Output written on Hall.pdf (8 pages, 177779 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
