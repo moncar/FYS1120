@@ -17,12 +17,12 @@
 
 \newcommand{\vb}{\mathbf}
 
-\addto{\cationsnorsk}{
+\addto\cationsnorsk{
   \renewcommand{\contentsname}
     {Innhald}
 }
 
-\addto{\cationsnorsk}{
+\addto\cationsnorsk{
   \renewcommand{\abstractname}
     {Samandrag}
 }
@@ -48,7 +48,7 @@
 \end{abstract}
 
 \newpage
-\tableofcontents
+  \tableofcontents
 \newpage
 
 \section*{Oppgåve 1}
@@ -132,9 +132,10 @@
       \lim_{t \to \infty} B_x(h) &= \lim_{t \to \infty} \frac{\mu_0}{2}j\underbrace{\left[ \frac{t}{\sqrt{t^2}} - \frac{h}{\sqrt{h^2 + a^2}} \right]}_{\approx 1} \\
       &= \frac{\mu_0}{2}j.
     \end{align*}
-    Midt i sylinderen har me at $h = -h$ det gjer oss
+    Midt i sylinderen har me at $h = -\frac{t}{2}$ det gjer oss
     \begin{align*}
-      B_x(-h) &= \frac{\mu_0}{2}j\left[ \frac{t - h}{\sqrt{(t - h)^2 + a^2}} + \frac{h}{\sqrt{h^2 + a^2}} \right].
+      B_x(-\frac{t}{2}) &= \frac{\mu_0}{2}j\left[ \frac{t}{2\sqrt{(-t/2)^2 + a^2}} + \frac{t}{2\sqrt{(-t/2)^2 + a^2}} \right] \\
+      &= \frac{\mu_0}{2}\frac{t}{\sqrt{(-t/2)^2 + a^2}}.
     \end{align*}
 
 
