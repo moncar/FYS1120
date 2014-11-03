@@ -1,1 +1,1 @@
-## Labøvelser i FYS1120.
+## Labøvelser i FYS1120
