@@ -1,8 +1,15 @@
 \select@language {norsk}
 \contentsline {section}{Oppg\IeC {\r a}ve 1}{3}
 \contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 1}{3}
-\contentsline {section}{Oppg\IeC {\r a}ve 2}{5}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.1}{5}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.2}{5}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.3}{6}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.4}{7}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 1.1}{4}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 1.2}{5}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 1.3 og oppg\IeC {\r a}ve 1.4}{6}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 1.5}{7}
+\contentsline {section}{Oppg\IeC {\r a}ve 2}{8}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.1}{8}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.2}{8}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.3}{9}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2.4}{10}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 2.1}{11}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 2.2}{13}
+\contentsline {section}{Oppg\IeC {\r a}ve 3}{15}

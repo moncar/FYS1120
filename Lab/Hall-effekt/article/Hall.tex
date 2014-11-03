@@ -1,5 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[norsk]{babel}
 \usepackage{amsmath, amssymb, amsfonts, amsthm}
@@ -33,19 +34,11 @@
     \vspace{10mm}
     \normalsize{\bf Hall-effekt.}}
 
-  \author{Øyvind Sigmundson Schøyen}
-%  \vspace{10mm}
-%  \author{Kristian}
-%  \vspace{10mm}
-%  \author{Hilde Solesvik Skeie}
+  \author{Øyvind Sigmundson Schøyen, Kristian Tuv og Hilde Solesvik Skeie}
 
 \end{titlepage}
 
 \maketitle
-
-\begin{abstract}
-  Sei noko her.
-\end{abstract}
 
 \newpage
   \tableofcontents
@@ -67,7 +60,123 @@
     Deretter måler me Hall-spenninga $V_{H}$ som ein funksjon av $B$ ved konstant $I$. \\ \\
     Me byrjar med å sette opp måleinstrumenta som består av to straumforsyningar, eit amperemeter, eit voltmeter og ein spole for å lage eit magnetfelt.
     Me stiller på straumforsyninga til me får $I \approx 24.132$ A gjennom komponenten (p-Ge). Då stiller me på potmeteret til me måler $V = 0$ gjennom komponenten.
+    No målar me spenninga over komponenten når me held han i magnetfeltet mellom spolane for forskjellige straumverdiar og $B$-felt. Retningen til $B$-feltet finner me ved 
+    høgrehandsregelen. % Legg ved teikning.
+    Hall-spenningas polaritet finn me og ved høgrehandsregelen. Me peiker i retninga til driftshastigheta med peikefingeren. Resten av fingrane peiker me i retning av $B$-feltet.
+    Då gjer tommelen oss retninga på krafta og me finn ut kor ladninga legg seg. % Legg ved teikning.
+    \begin{center}
+      \begin{tabular}{|l|l||l|}
+        \hline
+        $I$ & $B$ & $V$ \\
+        \hline
+        0.0 A & 6 mT & 1.4 mV \\
+        0.2 A & 42 mT & 6.14 mV \\
+        0.4 A & 74 mT & 11.47 mV \\
+        0.6 A & 108 mT & 16.7 mV \\
+        0.8 A & 142 mT & 22.0 mV \\
+        1.0 A & 175 mT & 27.24 mV \\
+        \hline
+      \end{tabular}
+    \end{center}
 
+  \subsection*{Oppgåve 1.2}
+  \addcontentsline{toc}{subsection}{Oppgåve 1.2}
+    Her vil me rekne ut $R_{H}$ og $N$ gjeve ved
+    \begin{align*}
+      R_{H} = \frac{V_{H}d}{IB} = \frac{1}{Nq} \qquad \Rightarrow \qquad N = \frac{1}{R_{H}q}.
+    \end{align*}
+    Me vil no måle spenningsfallet over Ge-prøva i straumretninga. Dette nyttar me for å finne driftshastigheta $v$ som me vil samanlikne med hastigheta til eit elektron som 
+    starter i ro i eit vakuum kor elektronet er utsatt for $E$-feltet som me får frå spenningskjelda over heila lengda $L$. \\ \\
+    
+    Me finner Hall-koeffisienten ved å ta endring i spenninga over endring i magnetfeltet. Då får me resultata under.
+    \begin{center}
+      \begin{tabular}{|l|l||l|}
+        \hline
+        $\Delta V$ & $\Delta B$ & $R_{H}$ \\
+        \hline
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/RH_utskrift.txt}
+        \hline
+      \end{tabular}
+    \end{center}
+
+    Ladninga $q \approx 1.6\times10^{-19}C$ som er elementærladninga til eit proton.
+    \begin{center}
+      \begin{tabular}{|l||l|}
+        \hline
+        $R_{H}$ & $N$ \\
+        \hline
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/N_utskrift.txt}
+        \hline
+      \end{tabular}
+    \end{center}
+
+    For å finne gjennomsnittshastigheta former me om uttrykket for $V_{H}$. Då får me
+    \begin{align*}
+      V_{H} = bvB = \frac{IB}{Nqd} \qquad \Rightarrow \qquad v = \frac{I}{Nqdb}.
+    \end{align*}
+    Me tek gjennomsnittet frå dei forskjellige verdiane av $N$. Då får me resultatet under.
+    \begin{align*}
+      \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/v_mean_utskrift.txt}
+    \end{align*}
+    Me finner hastigheta til eit elektron i vakuum ved å sjå på energi. Me vil sjå på omforminga frå potensiellenergi frå potensialet gonga med ladninga $q$ til kinetisk energi.
+    \begin{align*}
+      U = qV = \frac{1}{2}mv_e^2 \qquad \Rightarrow \qquad v_e = \sqrt{\frac{2qV}{m}}.
+    \end{align*}
+    Me finner potensialet $V$ ved å måle spenningsfallet over komponenten. Me koplar voltmeteret langs straumretninga. Då finner me $V \approx 1$ V.
+    \begin{align*}
+      \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/v_e_utskrift.txt}
+    \end{align*}
+
+
+  \subsection*{Oppgåve 1.3 og oppgåve 1.4}
+  \addcontentsline{toc}{subsection}{Oppgåve 1.3 og oppgåve 1.4}
+    Me gjentek stega frå $\textbf{Oppgåve 1.1}$ og $\textbf{Oppgåve 1.2}$ men for n-Ge. \\ \\
+    Når me no skal finne Hall-spenningas polaritet må me nytte venstre handa til å finne retninga. Dette då me no arbeidar med negative ladningar.
+    \begin{center}
+      \begin{tabular}{|l|l||l|}
+        \hline
+        $I$ & $B$ & $V$ \\
+        \hline
+        0.0 A & 8 mT & -2 mV \\
+        0.1 A & 33 mT & -5.34 mV \\
+        0.2 A & 56 mT & -6.84 mV \\
+        0.3 A & 81 mT & -12.4 mV \\
+        0.4 A & 101 mT & -15.84 mV \\
+        0.5 A & 121 mT & -18.67 mV \\
+        \hline
+      \end{tabular}
+    \end{center}
+    Me finner $R_{H}$, $N$ og gjennomsnittelig driftshastighet $v$.
+
+    \begin{center}
+      \begin{tabular}{|l|l||l|}
+        \hline
+        $\Delta V$ & $\Delta B$ & $R_{H}$ \\
+        \hline
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/RH_utskrift2.txt}
+        \hline
+      \end{tabular}
+    \end{center}
+
+    \begin{center}
+      \begin{tabular}{|l||l|}
+        \hline
+        $R_{H}$ & $N$ \\
+        \hline
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/N_utskrift2.txt}
+        \hline
+      \end{tabular}
+    \end{center}
+
+    \begin{align*}
+      \input{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/v_mean_utskrift2.txt}
+    \end{align*}
+
+  \subsection*{Oppgåve 1.5}
+  \addcontentsline{toc}{subsection}{Oppgåve 1.5}
+    Det kjem fram frå forteikna at me i p-Ge jobbar med positive ladningar og i n-Ge jobbar med negative ladningar. Storleiken på $R_{H}$ er annleis for n-Ge og p-Ge.
+    Den er mykje mindre for n-Ge'en. Me ser og at $N$ er mykje større. Dette kjem fra fordi me har større konsentrasjon av elektron per areal då me har negativ ladning. For
+    p-Ge'en vil me ha hol kor det manglar elektron.
 
 
 \newpage
@@ -145,6 +254,108 @@
       B_x(-\frac{t}{2}) &= \frac{\mu_0}{2}j\left[ \frac{t}{2\sqrt{(t/2)^2 + a^2}} + \frac{t}{2\sqrt{(-t/2)^2 + a^2}} \right] \\
       &= \frac{\mu_0}{2}\frac{t}{\sqrt{(t/2)^2 + a^2}}.
     \end{align*}
+
+
+
+  \subsection*{Oppgåve 2.1}
+  \addcontentsline{toc}{subsection}{Oppgåve 2.1}
+    Me vil måle $a$, $t$ og $B_{x}(h)$ i eit utvalg av avstandar frå overflata. Deretter vil me plotte i MATLAB for å samanlikna med den interpolerte funksjonen. \\ \\
+    Måleverdiane våre vert
+    \begin{center}
+      \begin{tabular}{|l|l|}
+        \hline
+        $h$ & $B_{x}(h)$ \\
+        \hline
+        0 cm & 278 mT \\
+        1 cm & 111.6 mT \\
+        2 cm & 50.9 mT \\
+        3 cm & 24.9 mT \\
+        4 cm & 14.6 mT \\
+        5 cm & 10 mT \\
+        6 cm & 7.1 mT \\
+        7 cm & 5.2 mT \\
+        8 cm & 4 mT \\
+        9 cm & 3.1 mT \\
+        10 cm & 2.7 mT \\
+        \hline
+      \end{tabular}
+    \end{center}
+
+    MATLAB gjer oss grafen;
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=400px]{Oppgave21.pdf}
+      \caption{Modellen stemmer bra med målepunkta.}
+    \end{figure}
+
+    Denne får me frå programmet
+    \verbatiminput{Oppgave2_1.m}
+
+  \subsection*{Oppgåve 2.2}
+  \addcontentsline{toc}{subsection}{Oppgåve 2.2}
+    Me vil no finne verdien for $\mu_0 j$. \\ \\
+    Me former om likninga for $B_{x}(h)$ slik at me får
+    \begin{align*}
+      \frac{2B}{z} = \mu_0j,
+    \end{align*}
+    kor
+    \begin{align*}
+      z = \frac{h + t}{\sqrt{(h + t)^2 + a^2}} - \frac{h}{\sqrt{h^2 + a^2}}.
+    \end{align*}
+    Me har valgt $h = 0.0$ m og $B = 278$ mT.
+    Då finner me
+    \begin{align*}
+      \mu_0 j = 1.13 \text{ T}.
+    \end{align*}
+    Det stemmer overens med magnetar laga av NdFeB som har ein remanent induksjon på ca $1.2$ T.
+
+\newpage
+
+\section*{Oppgåve 3}
+\addcontentsline{toc}{section}{Oppgåve 3}
+  Her vil me måle $B_{x}(h)$ for ein sylindrisk elektromagnet i forskjellige høgdar frå overflata og eit punkt inne i sylinderen. Me lager ein graf i MATLAB som viser punkta og
+  samanliknar med formelen for $B_{x}(h)$. \\ \\
+  Me fekk då måleverdiane
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+      $h$ & $B_{x}(h)$ \\
+      \hline
+      0 cm & 2.8 mT \\
+      1 cm & 2.0 mT \\
+      2 cm & 1.5 mT \\
+      3 cm & 1.1 mT \\
+      4 cm & 0.9 mT \\
+      5 cm & 0.6 mT \\
+      6 cm & 0.4 mT \\
+      7 cm & 0.3 mT \\
+      8 cm & 0.2 mT \\
+      9 cm & 0.1 mT \\
+      10 cm & 0.0 mT \\
+      \hline
+    \end{tabular}
+  \end{center}
+  over overflata og inne i sylinderen vert det $B = 5.3$ mT. Uttrykket for $j$ finner me då ved
+  \begin{align*}
+    j = \frac{N\mu}{V} = \frac{NIA}{V} = \frac{NI}{t},
+  \end{align*}
+  kor $t$ er lengda og $N$ er antal vindingar.
+  Dette fant me blant annet frå $\textbf{PRELAB-Oppgåve 2.1}$.
+
+  MATLAB gjer oss då grafen
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=400px]{Oppgave3.pdf}
+    \caption{Denne grafen er feil, men me fant ikkje feilen.}
+  \end{figure}
+
+  Programmet er skrive
+  \verbatiminput{Oppgave3.m}
+
+
+
+
+
 
 
 \end{document}
