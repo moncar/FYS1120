@@ -1,0 +1,160 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfig}
+\usepackage{float}
+
+\newcommand{\vb}{\mathbf}
+
+
+\renewcommand{\contentsname}{Innhald}
+\renewcommand{\abstractname}{Samandrag}
+
+\begin{document}
+
+\begin{titlepage}
+
+  \title{\normalsize FYS1120 Elektromagnetisme\\
+    \vspace{10mm}
+    \huge Labøving\\
+    \vspace{10mm}
+    \normalsize{\bf Grunnleggende elektromagnetisk måleteknikk.}}
+
+  \author{Kristian Tuv, Hilde Solesvik Skeie og Øyvind Sigmundson Schøyen.}
+
+\end{titlepage}
+
+\maketitle
+
+\newpage
+  \tableofcontents
+\newpage
+
+\section*{Indre resistans i eit voltmeter}
+\addcontentsline{toc}{section}{Indre resistans i eit voltmeter}
+
+  \subsection*{Oppgåve 1.1}
+  \addcontentsline{toc}{subsection}{Oppgåve 1.1}
+
+  \subsection*{PRELAB-Oppgåve 1}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 1}
+    Me nytter uttrykket for ladninga til ein kondensator som vert utlada. Denne finn me i boka og er gjeve ved
+    \begin{align*}
+      q = Q_0e^{-t/RC}.
+    \end{align*}
+    No setter me inn uttrykket for ladninga gjeve ved spenning og kapasitans.
+    \begin{align*}
+      C = \frac{Q}{V_{ab}} \qquad \Rightarrow \qquad Q = CV_{ab}.
+    \end{align*}
+    Då finner me for $V_0 = 2V_1$ at motstanden er gjeve ved
+    \begin{align*}
+      &CV_1 = -CV_0e^{-t/RC} \qquad \Rightarrow 2V_0 = -V_0e^{-t/RC} \\
+      &\Rightarrow \qquad 2 = -e^{-t/RC} \qquad \Rightarrow \qquad \ln{2} = \frac{t}{RC} \\
+      &\Rightarrow \qquad RC = \frac{t}{\ln{2}} \qquad \Rightarrow \qquad R = \frac{t}{C\ln{2}} \\
+      &\Rightarrow \qquad R = \frac{20\text{ s}}{(1\times10^{-6}\text{ F})\ln{2}} \approx 29\text{ M}\Omega.
+    \end{align*}
+    Det negative forteiknet dukker opp i likninga då me har både ein positiv og ein negativ lada plate på kondesatoren.
+
+  \subsection*{Oppgåve 1.2}
+  \addcontentsline{toc}{subsection}{Oppgåve 1.2}
+
+
+
+
+\newpage
+
+
+\section*{Indre resistans i eit amperemeter}
+\addcontentsline{toc}{section}{Indre resistans i eit amperemeter}
+
+
+  \subsection*{Oppgåve 2.1}
+  \addcontentsline{toc}{subsection}{Oppgåve 2.1}
+
+
+  \subsection*{PRELAB-Oppgåve 2}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2}
+    Me nytter det same programmet me nytta i utrekningane våre av Hall-effekten.
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave1.py}
+
+  
+  \subsection*{Oppgåve 2.2}
+  \addcontentsline{toc}{subsection}{Oppgåve 2.2}
+    
+
+
+\newpage
+
+
+\section*{Indre resistans i eit termoelement (Peltier-element)}
+\addcontentsline{toc}{section}{Indre resistans i eit termoelement (Peltier-element)}
+
+
+  \subsection*{Oppgåve 3.1}
+  \addcontentsline{toc}{subsection}{Oppgåve 3.1}
+
+
+  \subsection*{Oppgåve 3.2}
+  \addcontentsline{toc}{subsection}{Oppgåve 3.2}
+
+
+
+  \subsection*{Oppgåve 3.3}
+  \addcontentsline{toc}{subsection}{Oppgåve 3.3}
+
+
+
+
+
+\newpage
+
+
+
+
+\section*{Firepunktsmåling av resistans}
+\addcontentsline{toc}{section}{Firepunktsmåling av resistans}
+
+
+  \subsection*{Oppgåve 4.1}
+  \addcontentsline{toc}{subsection}{Oppgåve 4.1}
+
+
+
+
+\newpage
+
+
+
+
+\section*{Magnetfeltet til jordkloten}
+\addcontentsline{toc}{section}{Magnetfeltet til jordkloten}
+
+
+  \subsection*{PRELAB-Oppgåve 3}
+  \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 3}
+    Me bruker definisjonen Faradays lov. Då kan me skrive
+    \begin{align*}
+      \varepsilon = -N\frac{d\Phi_{B}}{dt} = -\frac{d}{dt}\left( BA\cos(\phi(t)) \right),
+    \end{align*}
+    kor $\phi(t) = \omega t$. Me deriverer med hensyn på tid og setter inn $\varepsilon = \varepsilon_0$. Det gjer oss
+    \begin{align*}
+      &\varepsilon_0 = BA\omega\sin(\omega t) \qquad \Rightarrow \qquad B = \frac{\varepsilon_0}{A\omega\sin(\omega t)}.
+    \end{align*}
+    Me ser at forholdet mellom $\omega$ og $t_2 - t_1$ gjer oss vinkelen $\phi(t_2 - t_1)$.
+
+
+
+  \subsection*{Oppgåve 5.1}
+  \addcontentsline{toc}{subsection}{Oppgåve 5.1}
+
+\end{document}
