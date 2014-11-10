@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  10 NOV 2014 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  10 NOV 2014 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,7 +507,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `GrunnleggjandeEMM.toc'.
 
  [2] [3]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 87.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 88.
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -515,43 +515,43 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 File: ~/Documents/3.Semester/FYS1120/Lab/Hall-effekt/src/PRELABOppgave1.py  (ve
 rbatim)
 
-Overfull \hbox (2.13574pt too wide) in paragraph at lines 87--87
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 88--88
 []\T1/cmtt/m/n/10.95 from matplotlib.pylab import plot, show, title, xlabel, yl
 abel,\[] 
  []
 
 
-Overfull \hbox (13.45248pt too wide) in paragraph at lines 87--87
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 88--88
 []\T1/cmtt/m/n/10.95 Klasse som les punkter frå ei fil, interpolerer med eit po
 lynom og[] 
  []
 
 
-Overfull \hbox (13.45248pt too wide) in paragraph at lines 87--87
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 88--88
 []                \T1/cmtt/m/n/10.95 self.points[0, counter] = float(values.spl
 it()[0])[] 
  []
 
 
-Overfull \hbox (13.45248pt too wide) in paragraph at lines 87--87
+Overfull \hbox (13.45248pt too wide) in paragraph at lines 88--88
 []                \T1/cmtt/m/n/10.95 self.points[1, counter] = float(values.spl
 it()[1])[] 
  []
 
 
-Overfull \hbox (2.13574pt too wide) in paragraph at lines 87--87
+Overfull \hbox (2.13574pt too wide) in paragraph at lines 88--88
 []    \T1/cmtt/m/n/10.95 Metode som nyttar numpy-biblioteket til å interpolere 
 punkta[] 
  []
 
 [4]
-Overfull \hbox (36.08597pt too wide) in paragraph at lines 87--87
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 88--88
 []        \T1/cmtt/m/n/10.95 self.poly = polyfit(self.points[0, :], self.points
 [1, :], deg)[] 
  []
 
 
-Overfull \hbox (30.4276pt too wide) in paragraph at lines 87--87
+Overfull \hbox (30.4276pt too wide) in paragraph at lines 88--88
 []            \T1/cmtt/m/n/10.95 self.evaluated[i] = polyval(self.poly, self.po
 ints[0, i])[] 
  []
@@ -577,7 +577,7 @@ texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm20
 74.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on GrunnleggjandeEMM.pdf (8 pages, 194320 bytes).
+Output written on GrunnleggjandeEMM.pdf (8 pages, 195211 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream

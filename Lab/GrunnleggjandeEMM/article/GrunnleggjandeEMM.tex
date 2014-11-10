@@ -58,10 +58,11 @@
     \end{align*}
     Då finner me for $V_0 = 2V_1$ at motstanden er gjeve ved
     \begin{align*}
-      &CV_1 = CV_0e^{-t/RC} \qquad \Rightarrow 2V_0 = V_0e^{-t/RC} \\
-      &\Rightarrow \qquad 2 = e^{-t/RC} \qquad \Rightarrow \qquad \ln{2} = -\frac{t}{RC} \\
-      &\Rightarrow \qquad RC = -\frac{t}{\ln{2}} \qquad \Rightarrow \qquad R = -\frac{t}{C\ln{2}} \\
-      &\Rightarrow \qquad |R| = \frac{20\text{ s}}{(1\times10^{-6}\text{ F})\ln{2}} \approx 29\text{ M}\Omega.
+      &CV_1 = CV_0e^{-t/RC} \qquad \Rightarrow \frac{1}{2}V_0 = V_0e^{-t/RC} \\
+      &\Rightarrow \qquad \frac{1}{2} = e^{-t/RC} \qquad \Rightarrow \qquad \ln{\frac{1}{2}} = -\frac{t}{RC} \\
+      &\Rightarrow \qquad \ln{1} - \ln{2} = -\frac{t}{RC} \qquad \Rightarrow \qquad \ln{2} = -\frac{t}{RC} \\
+      &\Rightarrow \qquad RC = \frac{t}{\ln{2}} \qquad \Rightarrow \qquad R = \frac{t}{C\ln{2}} \\
+      &\Rightarrow \qquad R = \frac{20\text{ s}}{(1\times10^{-6}\text{ F})\ln{2}} \approx 29\text{ M}\Omega.
     \end{align*}
 
   \subsection*{Oppgåve 1.2}
@@ -141,18 +142,19 @@
 
   \subsection*{PRELAB-Oppgåve 3}
   \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 3}
-    Me bruker definisjonen Faradays lov. Då kan me skrive
+    Me nyttar definisjonen av Faradays lov. Då kan me skrive
     \begin{align*}
-      \varepsilon = -N\frac{d\Phi_{B}}{dt} = -\frac{d}{dt}\left( BA\cos(\phi(t)) \right),
+      \varepsilon = -N\frac{d\Phi_{B}}{dt} = -\frac{d}{dt}\left( NBA\cos(\phi(t)) \right),
     \end{align*}
     kor $\phi(t) = \omega t$. Me deriverer med hensyn på tid og setter inn $\varepsilon = \varepsilon_0$. Det gjer oss
-    \begin{align*}
-      &\varepsilon_0 = BA\omega\sin(\omega t) \qquad \Rightarrow \qquad B = \frac{\varepsilon_0}{A\omega\sin(\omega t)}.
-    \end{align*}
+    \begin{align}
+      &\varepsilon_0 = NBA\omega\sin(\omega t).
+    \end{align}
     Me ser at forholdet mellom $\omega$ og $t_2 - t_1$ gjer oss vinkelen $\phi(t_2 - t_1)$. Då vil
     \begin{align*}
       \omega \propto \frac{1}{t_2 - t_1}.
     \end{align*}
+    Frå likning (1) ser me at $\varepsilon_0$ vil ha sin største verdi når $\omega t = \frac{\pi}{2}$.
 
 
 
