@@ -47,7 +47,8 @@ q = -q # C
 
 RH_mean = 0
 NH_mean = 0
-
+RH = lambda vh, b: vh*d/float(I*b)
+N = lambda r: 1.0/float(q*r)
 rH = open("RH_utskrift2.txt", 'w')
 nH = open("N_utskrift2.txt", 'w')
 for i in range(1, 6):
