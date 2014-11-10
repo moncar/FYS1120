@@ -1,0 +1,2 @@
+Tau is equal to: 84.8454 s\\ 
+Inner resistance: 1.02223e+07 ohm

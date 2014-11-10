@@ -1,17 +1,23 @@
 \contentsline {section}{Indre resistans i eit voltmeter}{3}
 \contentsline {subsection}{Oppg\IeC {\r a}ve 1.1}{3}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 1}{3}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 1.2}{3}
-\contentsline {section}{Indre resistans i eit amperemeter}{4}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 2.1}{4}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2}{4}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 2.2}{5}
-\contentsline {section}{Indre resistans i eit termoelement (Peltier-element)}{6}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 3.1}{6}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 3.2}{6}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 3.3}{6}
-\contentsline {section}{Firepunktsm\IeC {\r a}ling av resistans}{7}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 4.1}{7}
-\contentsline {section}{Magnetfeltet til jordkloten}{8}
-\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 3}{8}
-\contentsline {subsection}{Oppg\IeC {\r a}ve 5.1}{8}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 1}{4}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 1.2}{4}
+\contentsline {section}{Indre resistans i eit amperemeter}{5}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 2.1}{5}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2}{5}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 2.2}{6}
+\contentsline {section}{Indre resistans i eit termoelement (Peltier-element)}{8}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 3.1}{8}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 3.2}{8}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 3.3}{9}
+\contentsline {section}{Firepunktsm\IeC {\r a}ling av resistans}{10}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 4.1}{10}
+\contentsline {section}{Magnetfeltet til jordkloten}{11}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 3}{11}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 5.1}{11}
+\contentsline {section}{Programma}{12}
+\contentsline {subsection}{Oppgave1.1.py}{12}
+\contentsline {subsection}{Oppgave2.1.py}{12}
+\contentsline {subsection}{Oppgave3.2.py}{13}
+\contentsline {subsection}{Oppgave4.py}{14}
+\contentsline {subsection}{Oppgave5.py}{15}

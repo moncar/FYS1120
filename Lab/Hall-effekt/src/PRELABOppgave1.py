@@ -44,14 +44,14 @@ class EvaluatePoints:
     """
     Metode som plottar datapunkta og polynomet mot einannan.
     """
-    def plotPoints(self, TITLE):
+    def plotPoints(self, TITLE, saveName, xlab, ylab):
         plot(self.points[0, :], self.points[1, :], '.')
         hold('on')
         plot(self.points[0, :], self.evaluated, '-')
         hold('off')
         title(TITLE)
-        xlabel('x [m]')
-        ylabel('B [T]')
+        xlabel(xlab)
+        ylabel(ylab)
         legend(('datapunkter', 'polynomtilnærming',), loc=1)
-        savefig('PRELAB3.png')
+        savefig(saveName)
         show()

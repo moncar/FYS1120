@@ -1,0 +1,1 @@
+EMS of Peltier-element: 0.222099 V\\Inner resistance of Peltier-element: 0.897436 ohm
