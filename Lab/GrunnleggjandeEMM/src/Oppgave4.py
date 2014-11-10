@@ -21,9 +21,6 @@ for i in range(I_A4.size):
     R_C4.append(V_C4[i]/float(I_C4[i]))
     R_C2.append(V_C2[i]/float(I_C2[i]))
 
-for i in range(I_A4.size):
-    print ("Resistance of Aluminum rod: R4 = %g ohm \t R2 = %g ohm" % (R_A4[i], R_A2[i]))
-    print ("Resistance of Copper rod: R4 = %g ohm \t R2 = %g ohm" % (R_C4[i], R_C2[i]))
 
 with open('Oppgave4A.txt', 'w') as f:
     for i in range(I_A4.size):

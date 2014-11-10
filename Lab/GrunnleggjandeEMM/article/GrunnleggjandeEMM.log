@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  10 NOV 2014 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.10.27)  10 NOV 2014 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -704,18 +704,6 @@ Overfull \hbox (2.13574pt too wide) in paragraph at lines 300--300
 File: ~/Documents/3.Semester/FYS1120/Lab/GrunnleggjandeEMM/src/Oppgave4.py  (ve
 rbatim)
 
-Overfull \hbox (143.59502pt too wide) in paragraph at lines 306--306
-[]    \T1/cmtt/m/n/10.95 print ("Resistance of Aluminum rod: R4 = %g ohm \t R2 
-= %g ohm" % (R_A4[i], R_A2[i]))[] 
- []
-
-
-Overfull \hbox (132.27827pt too wide) in paragraph at lines 306--306
-[]    \T1/cmtt/m/n/10.95 print ("Resistance of Copper rod: R4 = %g ohm \t R2 = 
-%g ohm" % (R_C4[i], R_C2[i]))[] 
- []
-
-[14]
 Overfull \hbox (109.64479pt too wide) in paragraph at lines 306--306
 []        \T1/cmtt/m/n/10.95 f.write("%g & %g & %g & %g & %g & %g\\\\ \n" % (R_
 A4[i], I_A4[i], V_A4[i],\[] 
@@ -727,7 +715,7 @@ Overfull \hbox (109.64479pt too wide) in paragraph at lines 306--306
 A2[i], I_A2[i], V_A2[i]))[] 
  []
 
-
+[14]
 Overfull \hbox (109.64479pt too wide) in paragraph at lines 306--306
 []        \T1/cmtt/m/n/10.95 f.write("%g & %g & %g & %g & %g & %g\\\\ \n" % (R_
 C4[i], I_C4[i], V_C4[i],\[] 
@@ -762,7 +750,7 @@ fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></us
 r/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on GrunnleggjandeEMM.pdf (15 pages, 299247 bytes).
+Output written on GrunnleggjandeEMM.pdf (15 pages, 299121 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
