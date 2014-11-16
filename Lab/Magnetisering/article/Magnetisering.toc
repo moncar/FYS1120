@@ -1,0 +1,11 @@
+\contentsline {section}{M\IeC {\r a}ling av magnetisk susceptibilitet}{3}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 1}{3}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 1}{3}
+\contentsline {section}{M\IeC {\r a}ling av magnetisk fluks}{4}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 2.1}{4}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 2.2}{4}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 2}{4}
+\contentsline {section}{M\IeC {\r a}ling av magnetisk hysterese}{5}
+\contentsline {subsection}{PRELAB-Oppg\IeC {\r a}ve 3}{5}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 3.1}{5}
+\contentsline {subsection}{Oppg\IeC {\r a}ve 3.2}{5}

@@ -1,0 +1,128 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfig}
+\usepackage{float}
+
+\newcommand{\vb}{\mathbf}
+
+
+\renewcommand{\contentsname}{Innhald}
+\renewcommand{\abstractname}{Samandrag}
+
+\begin{document}
+
+\begin{titlepage}
+
+  \title{\normalsize FYS1120 Elektromagnetisme\\
+    \vspace{10mm}
+    \huge Labøving 2\\
+    \vspace{10mm}
+    \normalsize{\bf Magnetisering.}}
+
+  \author{Kristian Tuv, Hilde Solesvik Skeie og Øyvind Sigmundson Schøyen.}
+
+\end{titlepage}
+
+\maketitle
+
+\newpage
+  \tableofcontents
+\newpage
+
+\section*{Måling av magnetisk susceptibilitet}
+  \addcontentsline{toc}{section}{Måling av magnetisk susceptibilitet}
+
+  \subsection*{PRELAB-Oppgåve 1}
+    \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 1}
+    Viss $\chi > 0$ er materialet paramagnetisk og for $\chi < 0$ er det diamagnetisk. Då ser me at krafta for eit paramagnetisk materiale vil vere gjeve ved
+    \begin{align*}
+      F_z = -\frac{1}{2\mu_0}\chi A\left( B_1^2 - B_2^2 \right).
+    \end{align*}
+    Denne krafta peiker i negativ $z$-retning og vil trekke materialet ut av $B$-feltet nedover.
+    For eit diamagnetisk materiale vil krafta vere gjeve ved
+    \begin{align*}
+      F_z = \frac{1}{2\mu_0}\chi A\left( B_1^2 - B_2^2 \right).
+    \end{align*}
+    Her vert materialet dytta opp i positiv $z$-retning ut av $B$-feltet.
+
+
+  \subsection*{Oppgåve 1}
+    \addcontentsline{toc}{subsection}{Oppgåve 1}
+
+
+\newpage
+
+
+\section*{Måling av magnetisk fluks}
+  \addcontentsline{toc}{section}{Måling av magnetisk fluks}
+
+
+  \subsection*{Oppgåve 2.1}
+    \addcontentsline{toc}{subsection}{Oppgåve 2.1}
+
+
+  \subsection*{Oppgåve 2.2}
+    \addcontentsline{toc}{subsection}{Oppgåve 2.2}
+
+  \subsection*{PRELAB-Oppgåve 2}
+    \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2}
+    Me nyttar resultatet
+    \begin{align}
+      \int_{t_1}^{t_2}V\ dt = k\alpha = kDS = -\int_{\Phi_1}^{\Phi_2} \ d\Phi.
+    \end{align}
+    Frå Gauss lov for magnetisme har me at
+    \begin{align*}
+      \Phi_B = N\int\vb{B} \cdot d\vb{A}.
+    \end{align*}
+    Me set dette inn i likning (1) og får
+    \begin{align*}
+      &\int_{t_1}^{t_2}V \ dt = kDS = \Phi_B = NBA \\ 
+      &\Rightarrow \qquad B = \frac{kDS}{NA}.
+    \end{align*}
+
+
+
+\newpage
+
+
+\section*{Måling av magnetisk hysterese}
+  \addcontentsline{toc}{section}{Måling av magnetisk hysterese}
+
+
+  \subsection*{PRELAB-Oppgåve 3}
+    \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 3}
+    Me deriverer funksjonen
+    \begin{align*}
+      B &= B_0 + \mu_0H, \\
+      \frac{dB}{dH} = \mu_0.
+    \end{align*}
+    Stigningstalet vil då vere $\mu_0$. Me finner då $M$ ved
+    \begin{align*}
+      B = B_0 + \mu_0H = \mu_0\left( H + M \right) \qquad &\Rightarrow \qquad B_0 + \mu_0H = \mu_0H + \mu_0M \\
+      &\Rightarrow \qquad M = \frac{B_0}{\mu_0}.
+    \end{align*}
+
+
+  \subsection*{Oppgåve 3.1}
+    \addcontentsline{toc}{subsection}{Oppgåve 3.1}
+
+
+
+
+  \subsection*{Oppgåve 3.2}
+    \addcontentsline{toc}{subsection}{Oppgåve 3.2}
+
+
+
+\end{document}

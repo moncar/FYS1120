@@ -5,3 +5,5 @@ Kjeldekode og rapport til labøving 3 i FYS1120.
 ## Prosjektstruktur
 
 ## Artikkel
+
+* **article/Magnetisering.tex** Labrapport.
