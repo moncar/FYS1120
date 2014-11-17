@@ -59,6 +59,20 @@
 
   \subsection*{Oppgåve 1}
     \addcontentsline{toc}{subsection}{Oppgåve 1}
+    For å bestemme susceptibiliteten til Vismut vil me måle ein $\Delta m$. Fyrst finner me massa til vismutstaven uten eit magnetfelt. Etterpå slår me på eit kjent 
+    $B$-felt og finner den nye massa. Me former deretter om likninga for $F_z$ slik at me kan finne $\chi$.
+    \begin{align*}
+      F_z = -\frac{1}{2\mu_0}\chi A (B_1^2 - B_2^2) = \Delta mg \qquad \Rightarrow \qquad \chi = -\frac{2\Delta mg \mu_0}{A(B_1^2 - B_2^2)}.
+    \end{align*}
+    For $B_2 << B_1$ vert likninga omforma til
+    \begin{align*}
+      \chi = -\frac{2\Delta mg \ mu_0}{AB^2}.
+    \end{align*}
+    Programmet $\texttt{Oppgave1.py}$ gjer oss utskrifta 
+    \begin{align*}
+      \input{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave1.txt}.
+    \end{align*}
+    Me ser at $\chi < 0$ ergo er vismut ein diamagnet.
 
 
 \newpage
@@ -70,10 +84,34 @@
 
   \subsection*{Oppgåve 2.1}
     \addcontentsline{toc}{subsection}{Oppgåve 2.1}
+    For å rekne ut $k$ omformar me likninga
+    \begin{align*}
+      kDS = V_0t_0
+    \end{align*}
+    til
+    \begin{align*}
+      k = \frac{V_0t_0}{DS}.
+    \end{align*}
+    Me nyttar no verdiane me les av integratoren og frå voltmeteret til å finne $S$, $D$, $V_0$ og $t_0$. $D$ les me av Damp på integratoren, $S$
+    finn me ved å la integratoren stabilisere seg på ein verdi. $t_0$ er tida det tek frå me restartar integratoren til ho stabiliserar seg. $V_0$ les av frå 
+    voltmeteret som potensialskjelnaden over integratoren. Då får me frå programmet $\texttt{Oppgave2.1.py}$ utskrifta
+      \begin{align*}
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave2.1.txt}.
+      \end{align*}
+
 
 
   \subsection*{Oppgåve 2.2}
     \addcontentsline{toc}{subsection}{Oppgåve 2.2}
+    For å måle $B$-feltet kopla me ut spenningskjelda og motstandane og kopla til ein spole i integratoren. Deretter held me spola i ein magnet og restartar integratoren. Idet me 
+    restartar integratoren trekk me spola ut av magnetfeltet og skriv ned resultatet for $S$. Me tek gjennomsnittsverdien av dei målte $S$-verdiane. Då gjer likninga
+    \begin{align*}
+      B = \frac{kDS}{NA}
+    \end{align*}
+    $B$-feltet. Programmet $\texttt{Oppgave2.2.py}$ gjer oss utskrifta
+    \begin{align*}
+      \input{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave2.2.txt}.
+    \end{align*}
 
   \subsection*{PRELAB-Oppgåve 2}
     \addcontentsline{toc}{subsection}{PRELAB-Oppgåve 2}
@@ -98,6 +136,7 @@
 
 \section*{Måling av magnetisk hysterese}
   \addcontentsline{toc}{section}{Måling av magnetisk hysterese}
+  Grunna ikkje-fungerande utstyr vert me tildelt ei måling for $I = 4$ A.
 
 
   \subsection*{PRELAB-Oppgåve 3}
@@ -116,12 +155,64 @@
 
   \subsection*{Oppgåve 3.1}
     \addcontentsline{toc}{subsection}{Oppgåve 3.1}
+      Me nyttar formlane
+      \begin{align*}
+        H_{maks} = \frac{NI_{maks}}{2\pi R},
+      \end{align*}
+      \begin{align*}
+        B = \mu_0(H + M)
+      \end{align*}
+      og
+      \begin{align*}
+        B_{maks} = \frac{kD|S_1 - S_2|}{2\pi A}.
+      \end{align*}
+      Desse nyttar me til å finne $M$. Programmet $\texttt{Oppgave3.1.py}$ gjer oss verdiane
+      \begin{align*}
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave3.1.txt}.
+      \end{align*}
+      For $|I| \geq 2$ vil magnetiseringa vere relativt konstant. Viss $I \in [-2, 2]$ vil $M$ variere mykje.
+
+
 
 
 
 
   \subsection*{Oppgåve 3.2}
     \addcontentsline{toc}{subsection}{Oppgåve 3.2}
+      For å finne $B_r$ les me av nye verdiar for $S_1$ og $S_2$. Me set $H = 0$ og får frå programmet $\texttt{Oppgave3.1.py}$ utskrifta
+      \begin{align*}
+        \input{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave3.2.txt}.
+      \end{align*}
+      Denne verdien vil ikkje endre seg då $H \propto I$ slik at $I = 0$ for $H = 0$.
+
+
+
+
+
+
+
+\newpage
+
+\section*{Programma}
+  \addcontentsline{toc}{section}{Programma}
+
+  \subsection*{Oppgave1.py}
+    \addcontentsline{toc}{subsection}{Oppgave1.py}
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave1.py}
+
+  \subsection*{Oppgave2.1.py}
+    \addcontentsline{toc}{subsection}{Oppgave2.1.py}
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave2.1.py}
+
+
+  \subsection*{Oppgave2.2.py}
+    \addcontentsline{toc}{subsection}{Oppgave2.2.py}
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave2.2.py}
+
+  \subsection*{Oppgave3.1.py}
+    \addcontentsline{toc}{subsection}{Oppgave3.1.py}
+    \verbatiminput{\string~/Documents/3.Semester/FYS1120/Lab/Magnetisering/src/Oppgave3.1.py}
+
 
 
 
